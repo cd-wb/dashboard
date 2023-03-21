@@ -1,0 +1,55 @@
+/*======== Framework ========*/
+
+/* Box */
+.d-flex {
+  display: flex;
+}
+/*// Box */
+
+/* paddding & margin */
+.p-10 {
+  padding: 10px;
+}
+.p-20 {
+  padding: 20px;
+}
+.mb-15 {
+  margin-bottom: 15px;
+}
+.m-20 {
+  margin: 20px;
+}
+/*// paddding & margin */
+
+/* background & color  */
+.bg-white {
+  background-color: white;
+}
+.c-black {
+  color: black;
+}
+/*// background & color  */
+
+/* position */
+.p-relative {
+  position: relative;
+}
+/*// position */
+
+/* text & font */
+.text-c {
+  text-align: center;
+}
+.text-cap {
+  text-transform: capitalize;
+}
+.fs-14 {
+  font-size: 14px;
+}
+/*// text & font */
+
+/* border */
+.red-6 {
+  border-radius: 6px;
+}
+/*// border */
