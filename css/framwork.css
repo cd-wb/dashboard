@@ -4,11 +4,26 @@
 .d-flex {
   display: flex;
 }
+.w-full {
+  width: 100%;
+}
 /*// Box */
 
 /* paddding & margin */
+.p-5 {
+  padding: 5px;
+}
 .p-10 {
   padding: 10px;
+}
+.pl-10 {
+  padding-left: 10px;
+}
+.pr-10 {
+  padding-right: 10px;
+}
+.p-15 {
+  padding: 15px;
 }
 .p-20 {
   padding: 20px;
@@ -46,10 +61,24 @@
 .fs-14 {
   font-size: 14px;
 }
+.fs-20 {
+  font-size: 20px;
+}
 /*// text & font */
 
 /* border */
 .red-6 {
   border-radius: 6px;
 }
+.bord-1 {
+  border: 1px solid;
+}
 /*// border */
+
+/* component */
+.bettwen-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/*// component */

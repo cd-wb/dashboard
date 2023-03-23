@@ -100,3 +100,60 @@ img {
   }
 }
 /*// navbar */
+
+/*==== content==== */
+/* header */
+header {
+}
+header .search {
+}
+header .search label {
+}
+header .search label i {
+  right: -25px;
+  color: #afafaf;
+  padding-left: 5px;
+}
+header .search label input {
+  padding-left: 25px;
+  max-width: 185px;
+  height: 35px;
+  border-color: #eee;
+  padding-right: 0px;
+}
+header .search label input::placeholder {
+  text-transform: capitalize;
+  color: #afafaf;
+}
+header .icons {
+  width: 50px;
+}
+header .icons i:first-child {
+  position: relative;
+}
+header .icons > i::after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: orangered;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+header .icons a i {
+  font-size: 25px;
+}
+@media (max-width: 390px) {
+  .page header {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  .page header .icons {
+    width: 150px;
+  }
+}
+/*// header */
+/*//==== content==== */
