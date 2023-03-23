@@ -110,16 +110,27 @@ header .search {
 header .search label {
 }
 header .search label i {
+  position: absolute;
   right: -25px;
   color: #afafaf;
   padding-left: 5px;
 }
 header .search label input {
   padding-left: 25px;
-  max-width: 185px;
-  height: 35px;
+  /* max-width: 185px;
+  height: 35px; */
   border-color: #eee;
-  padding-right: 0px;
+  /* padding-right: 0px; */
+  transition: 0.3s linear;
+  caret-color: #afafaf;
+}
+header .search label::before {
+  font: var(--fa-font-solid);
+  content: "\f002";
+  font-weight: 900;
+}
+header .search label input:where(:focus, :hover) {
+  max-width: 200px;
 }
 header .search label input::placeholder {
   text-transform: capitalize;
