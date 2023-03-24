@@ -197,4 +197,37 @@ header .icons a i {
   font-size: 25px;
 }
 /*// header */
+
+/* wrapper */
+.page .wrapper {
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  margin-left: 20px;
+  margin-right: 20px;
+  gap: 20px;
+}
+@media (max-width: 767px) {
+  .page .wrapper {
+    grid-template-columns: minmax(200px, 1fr);
+    margin-left: 10px;
+    margin-right: 10px;
+    gap: 10px;
+  }
+}
+.page .wrapper .welcom .textContent {
+  height: 150px;
+}
+.page .wrapper .welcom .welcomContent {
+  position: relative;
+  height: 80px;
+}
+.page .wrapper .welcom .welcomContent i {
+  position: absolute;
+  top: -60px;
+  font-size: 80px;
+  left: 40px;
+  background-color: white;
+  border-radius: 50%;
+  border: 8px solid white;
+}
+/*// wrapper */
 /*//==== content==== */

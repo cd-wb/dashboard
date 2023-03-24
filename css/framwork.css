@@ -4,8 +4,19 @@
 .d-flex {
   display: flex;
 }
+.d-grid {
+  display: grid;
+}
+@media (max-width: 767px) {
+  .d-block-mob {
+    display: block;
+  }
+}
 .w-full {
   width: 100%;
+}
+.hidden {
+  overflow: hidden;
 }
 /*// Box */
 
@@ -25,6 +36,9 @@
 .p-15 {
   padding: 15px;
 }
+.pl-15 {
+  padding-left: 15px;
+}
 .p-20 {
   padding: 20px;
 }
@@ -34,14 +48,24 @@
 .m-20 {
   margin: 20px;
 }
+.m-10 {
+  margin: 10px;
+}
 /*// paddding & margin */
 
 /* background & color  */
 .bg-white {
   background-color: white;
 }
+.bg-gray {
+  background-color: rgb(209, 209, 209);
+}
+
 .c-black {
   color: black;
+}
+.c-mdwhite {
+  color: gray;
 }
 /*// background & color  */
 
@@ -58,11 +82,19 @@
 .text-cap {
   text-transform: capitalize;
 }
+@media (max-width: 767px) {
+  .text-c-mob {
+    text-align: center;
+  }
+}
 .fs-14 {
   font-size: 14px;
 }
 .fs-20 {
   font-size: 20px;
+}
+.fw-bold {
+  font-weight: bold;
 }
 /*// text & font */
 
