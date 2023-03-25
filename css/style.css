@@ -1,4 +1,10 @@
 /* spacial header */
+::placeholder{
+	text-transform: capitalize;
+}
+textarea{
+	resize: none;
+}
 .page .header-section {
   margin: 20px 20px 40px;
 }
@@ -69,7 +75,7 @@ img {
 /*// GeneralRnaves */
 .page {
   min-height: 100vh;
-  background-color: #eee;
+  background-color: #f1f5f9;
 }
 
 /* navbar */
@@ -136,10 +142,6 @@ img {
 
 /*==== content==== */
 /* header */
-header {
-}
-header .search {
-}
 header .search label {
   position: relative;
 }
@@ -213,12 +215,8 @@ header .icons a i {
     gap: 10px;
   }
 }
-.page .wrapper .welcom .textContent {
-  height: 150px;
-}
 .page .wrapper .welcom .welcomContent {
   position: relative;
-  height: 80px;
 }
 .page .wrapper .welcom .welcomContent i {
   position: absolute;
@@ -228,6 +226,23 @@ header .icons a i {
   background-color: white;
   border-radius: 50%;
   border: 8px solid white;
+}
+.page .wrapper .welcom .textContent {
+  height: 170px;
+}
+.page .wrapper .welcom .textContent .intro{
+	flex:1
+
+}
+.page .wrapper .welcom .body {
+  margin-top: 45px;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+@media (max-width:479px) {
+	.page .wrapper .welcom .body >div:first-child{
+		flex-basis:100%;
+	}
 }
 /*// wrapper */
 /*//==== content==== */
