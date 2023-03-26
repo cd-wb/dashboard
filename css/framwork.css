@@ -76,6 +76,12 @@
 .p-5 {
   padding: 5px;
 }
+.pt-5 {
+  padding-top: 5px;
+}
+.pb-5 {
+  padding-bottom: 5px;
+}
 .p-10 {
   padding: 10px;
 }
@@ -131,14 +137,23 @@
   background-color: #eee;
 }
 
+.c-main {
+  color: #fcc031;
+}
 .c-white {
   color: white;
 }
 .c-black {
   color: black;
 }
-.c-mdwhite {
-  color: gray;
+.c-blue{
+  color: blue;
+}
+.c-green{
+  color: green;
+}
+.c-red {
+  color: red;
 }
 .c-gray {
   color: gray;
@@ -171,6 +186,9 @@
 }
 .fs-20 {
   font-size: 20px;
+}
+.fs-25 {
+  font-size: 25px;
 }
 .fw-bold {
   font-weight: bold;
