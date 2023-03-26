@@ -244,5 +244,50 @@ header .icons a i {
 		flex-basis:100%;
 	}
 }
+
+.page .wrapper .draft form textarea,
+.wrapper .draft form input{
+	transition: .3s;
+}
+.page .wrapper .draft form textarea:is(:hover,:focus),
+.page .wrapper .draft form input:first-of-type:is(:hover,:focus){
+	background-color: #eeeeee78;
+}
+
+.page .wrapper .targetYears .cartcontent .carts .icon{
+	padding: 30px;
+	background: #ff292942;
+	margin-right: 15px;
+	color:red;
+	font-size: 35px;
+}
+.page .wrapper .targetYears .cartcontent .carts .cartText > div{
+	height: 4px;
+	margin-bottom: 10px;
+}
+.page .wrapper .targetYears .cartcontent .carts .cartText  div>span span{
+	position: absolute;
+	display: block;
+	top: -35px;
+	left: 95%;
+	padding: 5px 10px;
+	background: red;
+}
+.page .wrapper .targetYears .cartcontent .carts .cartText  div>span{
+	background-color: red;
+	height: 4px;
+}
+.page .wrapper .targetYears .cartcontent .carts .cartText div>span::before,
+.page .wrapper .targetYears .cartcontent .carts .cartText div>span::after{
+	position: absolute;
+}
+.page .wrapper .targetYears .cartcontent .carts .cartText div>span::after{
+	content: "";
+	border-style: solid;
+	border-width: 5px;
+	border-color: red transparent transparent transparent;
+	top: -9px;
+	left: 99%;
+}
 /*// wrapper */
 /*//==== content==== */
