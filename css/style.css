@@ -269,7 +269,7 @@ header .icons a i {
 	position: absolute;
 	display: block;
 	top: -35px;
-	left: 96%;
+	left: calc(100% - 16px);
 	padding: 5px ;
 	background: red;
 }
