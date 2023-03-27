@@ -320,9 +320,7 @@ header .icons a i {
 	right: -5px;
 }
 
-.tickets .col{
-	/* grid-template-columns:repeat(auto-fill,minmax(250px,1fr)); */
-	/* justify-content: center; */
+.tickets>.col{
 	justify-content: space-evenly;
 	flex-wrap: wrap;
 	padding-top: 20px;
@@ -330,6 +328,47 @@ header .icons a i {
 .tickets .col .ticketcart{
 	flex-basis: 45%;
 	padding:25px;
+}
+@media (max-width:500px) {
+	.tickets .col .ticketcart{
+		flex-basis: 100%;
+	}
+}
+
+.latestNews {
+}
+.latestNews .row {
+	gap: 15px;
+}
+.latestNews .row img{
+	width: 100px;
+}
+.latestNews .row .textNews{
+	flex: 1;
+}
+.latestNews .row .textNews h3{
+	font-size: 16px;
+}
+.latestNews .row div:last-of-type{
+	font-size: 10px;
+	padding: 6px;
+}
+.latestNews .row:not(:last-child){
+	border-bottom: 1px solid #eee;
+}
+
+.tasks .tasksrow .textTasks h3{
+	font-size: 16px;
+}
+.tasks .tasksrow:not(:last-child){
+	border-bottom: 1px solid #eee;
+}
+.tasks .DONETasks .textTasks{
+	text-decoration: line-through;
+}
+.tasks .DONETasks .textTasks,
+.tasks .DONETasks i{
+	opacity:.6;
 }
 /*// wrapper */
 /*//==== content==== */
