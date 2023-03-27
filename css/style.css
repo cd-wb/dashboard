@@ -335,8 +335,6 @@ header .icons a i {
 	}
 }
 
-.latestNews {
-}
 .latestNews .row {
 	gap: 15px;
 }
@@ -349,12 +347,13 @@ header .icons a i {
 .latestNews .row .textNews h3{
 	font-size: 16px;
 }
-.latestNews .row div:last-of-type{
-	font-size: 10px;
-	padding: 6px;
-}
 .latestNews .row:not(:last-child){
 	border-bottom: 1px solid #eee;
+}
+@media (max-width:500px) {
+	.latestNews .row{
+		flex-direction: column	;
+	}
 }
 
 .tasks .tasksrow .textTasks h3{
