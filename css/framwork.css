@@ -83,6 +83,9 @@
 .hidden {
   overflow: hidden;
 }
+.cpointer{
+	cursor:pointer;
+}
 /*// Box */
 
 /* paddding & margin */
@@ -113,8 +116,14 @@
 .p-15 {
   padding: 15px;
 }
+.pt-15 {
+  padding: 15px;
+}
 .pl-15 {
   padding-left: 15px;
+}
+.pb-15 {
+  padding: 15px;
 }
 .p-20 {
   padding: 20px;
@@ -133,6 +142,9 @@
 }
 .m-20 {
   margin: 20px;
+}
+.mb-20 {
+  margin-bottom: 20px;
 }
 .m-10 {
   margin: 10px;
@@ -203,13 +215,16 @@
 .fs-14 {
   font-size: 14px;
 }
+.fs-16 {
+  font-size: 16px;
+}
 .fs-20 {
   font-size: 20px;
 }
 .fs-25 {
   font-size: 25px;
 }
-.fw-bold {
+.fredw-bold {
   font-weight: bold;
 }
 .fw-normal {

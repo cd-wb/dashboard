@@ -10,11 +10,11 @@ textarea{
 }
 .page .header-section::before,
 .page .header-section::after {
-  content: "";
-  position: absolute;
-  height: 3px;
-  bottom: 0;
-  left: 10px;
+	content: "";
+	position: absolute;
+	height: 3px;
+	bottom: 0;
+	left: 10px;
 }
 .page .header-section::before {
   background: #fff;
@@ -205,6 +205,7 @@ header .icons a i {
   grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
   margin-left: 20px;
   margin-right: 20px;
+	margin-bottom: 20px;
   gap: 20px;
 }
 @media (max-width: 767px) {
@@ -361,6 +362,7 @@ header .icons a i {
 }
 .tasks .tasksrow:not(:last-child){
 	border-bottom: 1px solid #eee;
+	margin-bottom: 15px;
 }
 .tasks .DONETasks .textTasks{
 	text-decoration: line-through;
@@ -368,6 +370,56 @@ header .icons a i {
 .tasks .DONETasks .textTasks,
 .tasks .DONETasks i{
 	opacity:.6;
+}
+.tasks .tasksrow i:hover{
+		color:red;
+}
+
+.update .itemsupdate{
+	padding-top: 10px;
+	display: grid;
+	gap:15px;
+}
+.update .itemsupdate .item:not(:last-child){
+	border-bottom: 1px solid #eee;
+	padding-bottom: 10px;
+}
+.update .itemsupdate .infoupdate img{
+	width:50px;
+	padding-right:10px
+}
+
+.progress .boxprogrsss{
+	padding-left: 30px;
+	border-left: 3px solid #fcc031;
+}
+.progress .boxprogrsss > div::after{
+	content: "";
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	background: #fcc031;
+	top: 50%;
+	left: -43px;
+	transform: translateY(-50%);
+	border-radius: 50%;
+	outline: 2px solid #fcc031;
+	border: 2px solid white;
+	z-index: 1;
+}
+.progress .boxprogrsss > div:last-of-type::after{
+	background: white;
+}
+.progress .boxprogrsss > div:nth-of-type(4)::after{
+	animation: flashing infinite 2.5s ;
+}
+@keyframes flashing {
+	0%,100%{
+		background-color: white;
+	}
+	50%{
+		background-color: #fcc031;
+	}
 }
 /*// wrapper */
 /*//==== content==== */
