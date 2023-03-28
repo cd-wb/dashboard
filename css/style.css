@@ -413,6 +413,11 @@ header .icons a i {
 .progress .boxprogrsss > div:nth-of-type(4)::after{
 	animation: flashing infinite 2.5s ;
 }
+.progress > img{
+	margin-left: auto;
+	opacity: .3;
+	width: 200px;
+}
 @keyframes flashing {
 	0%,100%{
 		background-color: white;
