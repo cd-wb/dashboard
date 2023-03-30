@@ -473,5 +473,19 @@ header .icons a i {
 .reminder .reminderbox .remindercontent:last-child::before{
 	background-color: red;
 }
+
+.poste {
+}
+.poste .posteuser{
+}
+.poste .posteuser i{
+	padding-right: 35px;
+}
+.poste  .posteinfo{
+	margin-top: 15px;
+	margin-bottom: 15px;
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+}
 /*// wrapper */
 /*//==== content==== */

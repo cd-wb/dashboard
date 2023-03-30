@@ -131,6 +131,9 @@
 .pb-15 {
   padding-bottom: 15px;
 }
+.pr-15 {
+  padding-right: 15px;
+}
 .p-20 {
   padding: 20px;
 }
@@ -169,6 +172,9 @@
 }
 .bg-white {
   background-color: white;
+}
+.bg-black {
+  background-color: black;
 }
 .bg-gray {
   background-color: rgb(209, 209, 209);
