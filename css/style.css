@@ -414,9 +414,11 @@ header .icons a i {
 	animation: flashing infinite 2.5s ;
 }
 .progress > img{
-	margin-left: auto;
-	opacity: .3;
-	width: 200px;
+	opacity: .2;
+	width: 180px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
 }
 @keyframes flashing {
 	0%,100%{
@@ -425,6 +427,51 @@ header .icons a i {
 	50%{
 		background-color: #fcc031;
 	}
+}
+
+.reminder{
+}
+.reminder .reminderbox{
+	padding-left: 15px;
+}
+.reminder .reminderbox .remindercontent{
+	border-left: 2px solid ;
+	padding-left: 20px;
+}
+.reminder .reminderbox .remindercontent::before{
+	content:"";
+	width:15px;
+	height:15px;
+	position: absolute;
+	left: -30px;
+	top: 50%;
+	transform: translateY(-50%);
+	border-radius: 50%;
+
+}
+.reminder .reminderbox .remindercontent:first-child{
+	border-color: #fcc031;
+}
+.reminder .reminderbox .remindercontent:first-child::before{
+	background-color: #fcc031;
+}
+.reminder .reminderbox .remindercontent:nth-child(2){
+	border-color: blue;
+}
+.reminder .reminderbox .remindercontent:nth-child(2)::before{
+	background-color: blue;
+}
+.reminder .reminderbox .remindercontent:nth-child(3){
+	border-color: green;
+}
+.reminder .reminderbox .remindercontent:nth-child(3)::before{
+	background-color: green;
+}
+.reminder .reminderbox .remindercontent:last-child{
+	border-color: red;
+}
+.reminder .reminderbox .remindercontent:last-child::before{
+	background-color: red;
 }
 /*// wrapper */
 /*//==== content==== */
