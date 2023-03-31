@@ -164,6 +164,9 @@
 .mt-10 {
   margin-top: 10px;
 }
+.m-5 {
+  margin: 5px;
+}
 /*// paddding & margin */
 
 /* background & color  */
@@ -181,6 +184,9 @@
 }
 .bg-eee {
   background-color: #eee;
+}
+.bg-cyan {
+  background-color: lightcyan;
 }
 
 .c-main {

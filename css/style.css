@@ -474,10 +474,6 @@ header .icons a i {
 	background-color: red;
 }
 
-.poste {
-}
-.poste .posteuser{
-}
 .poste .posteuser i{
 	padding-right: 35px;
 }
@@ -487,5 +483,90 @@ header .icons a i {
 	border-top: 1px solid #eee;
 	border-bottom: 1px solid #eee;
 }
+
+.socialMedia .socialmediaicone>.def{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+
+.socialMedia .socialmediaicone>.def div{
+	width: 100%;
+	height: 50px;
+	margin:5px;
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+.socialMedia .socialmediaicone>.facebook div{
+	background-color:#d0e4fd ;
+}
+.socialMedia .socialmediaicone>.twitter div{
+	background-color:#d1ecfd ;
+}
+.socialMedia .socialmediaicone>.youtube div{
+	background-color:#ffcccc ;
+}
+.socialMedia .socialmediaicone>.linkedin div{
+	background-color:#cce4f0 ;
+}
+.socialMedia .socialmediaicone .def div i{
+	font-size: 25px;
+	color: white;
+	text-align: left;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	width: 50px;
+	transition: .3s;
+}
+.socialMedia .socialmediaicone>.facebook .leftChape,
+.socialMedia .socialmediaicone>.facebook div i{
+	background-color:#1877f2 ;
+}
+.socialMedia .socialmediaicone>.twitter .leftChape,
+.socialMedia .socialmediaicone>.twitter div i{
+	background-color:#1da1f2 ;
+}
+.socialMedia .socialmediaicone> .youtube .leftChape,
+.socialMedia .socialmediaicone> .youtube div i{
+	background-color:#ff0000 ;
+}
+.socialMedia .socialmediaicone> .linkedin .leftChape,
+.socialMedia .socialmediaicone> .linkedin div i{
+	background-color:#0077b5 ;
+}
+.socialMedia .socialmediaicone  .def div p{
+	font-size: 14px;
+	text-transform: capitalize;
+	color: white;
+}
+
+.socialMedia .socialmediaicone  .facebook div p{
+	color:#1877f2 ;
+}
+.socialMedia .socialmediaicone  .twitter div p{
+	color:#1da1f2 ;
+}
+.socialMedia .socialmediaicone  .youtube div p{
+	color:#ff0000 ;
+}
+.socialMedia .socialmediaicone  .linkedin div p{
+	color:#0077b5
+}
+.socialMedia .socialmediaicone>.def .leftChape{
+	position: absolute;
+	width: max-content;
+	height: 20px;
+	right: 10px;
+	color: white;
+}
+
+.socialMedia .socialmediaicone .def div i:hover{
+	transform: rotate(5deg);
+}
+
 /*// wrapper */
 /*//==== content==== */
