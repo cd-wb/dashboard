@@ -179,6 +179,9 @@
 .bg-black {
   background-color: black;
 }
+.bg-red {
+  background-color: red;
+}
 .bg-gray {
   background-color: rgb(209, 209, 209);
 }
@@ -187,6 +190,9 @@
 }
 .bg-cyan {
   background-color: lightcyan;
+}
+.bg-green {
+  background-color: green;
 }
 
 .c-main {

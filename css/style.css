@@ -569,4 +569,46 @@ header .icons a i {
 }
 
 /*// wrapper */
+/* Project table */
+.projects {
+}
+.projects .responciveTable{
+	overflow-x: auto;
+}
+.projects .responciveTable table {
+	min-width: 1000px;
+	border-spacing: 0;
+}
+.projects  table td{
+	padding: 15px;
+}
+.projects table tr{
+}
+.projects table thead {
+	background-color: #eee;
+	font-weight: bold;
+}
+.projects table img{
+	width:32px;
+	padding: 2px;
+	background-color: white;
+	border-radius: 50%;
+	height: 32px;
+	display: inline-block;
+}
+.projects table img:not(:first-child){
+	margin-left: -20px;
+}
+.projects table tbody td{
+	border-bottom: 1px solid #eee;
+	border-left: 1px solid #eee;
+	transition: .3s;
+}
+.projects table tbody td:last-child{
+	border-right: 1px solid #eee;
+}
+.projects table tbody tr:hover td{
+	background-color: #faf7f7;
+}
+/*// Project table */
 /*//==== content==== */
