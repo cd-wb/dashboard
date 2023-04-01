@@ -611,4 +611,28 @@ header .icons a i {
 	background-color: #faf7f7;
 }
 /*// Project table */
+
+/* setting-page */
+.setting-page{
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  margin-left: 20px;
+  margin-right: 20px;
+	margin-bottom: 20px;
+	gap:20px;
+}
+@media (max-width: 767px) {
+  .setting-page {
+    grid-template-columns: minmax(200px, 1fr);
+    margin-left: 10px;
+    margin-right: 10px;
+    gap: 10px;
+  }
+}
+.setting-page .text textarea{
+	min-height: 160px;
+	border: 1px solid #ccc;
+	font-family: monospace;
+	font-size: 12px;
+}
+/*// setting-page */
 /*//==== content==== */
