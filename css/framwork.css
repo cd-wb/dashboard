@@ -30,10 +30,13 @@
 	color:black;
 	background-color: #eee;
 }
-.toggle-check{
+.toggle{
+	display: flex;
+}
+.toggle .toggle-check{
 	appearance: none;
 }
-.toggle-switch{
+.toggle .toggle-switch{
 	width: 78px;
 	height: 32px;
 	background-color: #ccc;
@@ -42,7 +45,7 @@
 	transition: .2s;
 	cursor: pointer;
 }
-.toggle-switch::before{
+.toggle .toggle-switch::before{
 	font:var(--fa-font-solid);
 	content: "\f00d";
 	font-size: 18px;
@@ -59,10 +62,10 @@
 	top:2px;
 	left:2px;
 }
-.toggle-check:checked + .toggle-switch{
+.toggle .toggle-check:checked + .toggle-switch{
 	background-color: #fcc031;
 }
-.toggle-check:checked + .toggle-switch::before{
+.toggle .toggle-check:checked + .toggle-switch::before{
 	content:"\f00c";
 	color: #feb200;
 	left:48px;
@@ -152,6 +155,9 @@
 }
 .pl-10 {
   padding-left: 10px;
+}
+.pb-10 {
+  padding-bottom: 10px;
 }
 .pr-10 {
   padding-right: 10px;
@@ -317,6 +323,12 @@
 }
 .bord-1 {
   border: 1px solid;
+}
+.bordtop-1 {
+  border-top: 1px solid;
+}
+.bordbottom-1 {
+  border-bottom: 1px solid;
 }
 .bord-none {
   border: none;
