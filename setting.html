@@ -136,7 +136,7 @@
 								<h3 class="fw-normal pb-5">web control</h3>
 								<p class="c-gray fs-14 ">open/close the website and type the reason</p>
 							</div>
-							<label class="toggle">
+							<label >
 								<input class="toggle-check" type="checkbox">
 								<div class="toggle-switch">
 								</div>
@@ -163,7 +163,7 @@
 							<div class="emaildiv d-flex pt-15">
 								<label class="text-cap d-block ">
 									<span class="text-cap d-block fs-14 c-gray">email</span>
-									<input class="mt-5  pt-5 pl-10 pb-5 w-full d-block red-6 " type="email" value="emialHot@gmail.com" disabled>
+									<input class="mt-5 pt-5 pl-10 pb-5 w-full d-block red-6 " type="email" value="emialHot@gmail.com" disabled>
 								</label>
 								<button class="c-main">change</button>
 							</div>
@@ -187,13 +187,13 @@
 									<h3 class=" fw-normal pb-5">two-factor authentication</h3>
 									<p class="c-gray fs-14">enable/disable the the feature</p>
 								</div>
-								<label class="toggle">
-									<input class="toggle-check" type="checkbox">
+								<label >
+									<input class="toggle-check" type="checkbox" checked>
 									<div class="toggle-switch">
 									</div>
 								</label>
 							</div>
-							<div class="device bettwen-flex pt-10 ">
+							<div class="device bettwen-flex pt-10 pb-10">
 								<div class="textdevice text-cap fw-normal">
 									<h3 class=" fw-normal pb-5">device</h3>
 									<p class="c-gray fs-14">check the login devices list</p>
@@ -202,7 +202,108 @@
 							</div>
 						</div>
 					</div>
+					<div class="social red-10 bg-white ">
+						<div class="textsocial p-15">
+							<h2 class="text-cap pb-10">social info</h2>
+							<p class="text-cap c-gray fw-bold fs-14">social media information</p>
+						</div>
+						<div class="socialInput pl-15 pr-15 pb-20 d-flex gap-10 columns">
+							<label class="d-flex align-center bg-eee  bord-1 bord-ccc red-6">
+								<i class="fa-brands fa-facebook fa-fw just-center d-flex fs-16  align-center"></i>
+								<input type="text" class="flex pt-5 pb-5" placeholder="facebook username">
+							</label>
+							<label class="d-flex align-center bg-eee  bord-1 bord-ccc red-6">
+								<i class="fa-brands fa-twitter fa-fw just-center d-flex fs-16  align-center"></i>
+								<input type="text" class="flex pt-5 pb-5" placeholder="twitter username">
+							</label>
+							<label class="d-flex align-center bg-eee  bord-1 bord-ccc red-6">
+								<i class="fa-brands fa-linkedin fa-fw just-center d-flex fs-16  align-center"></i>
+								<input type="text" class="flex pt-5 pb-5" placeholder="linkedin username">
+							</label>
+							<label class="d-flex align-center bg-eee  bord-1 bord-ccc red-6">
+								<i class="fa-brands fa-youtube fa-fw just-center d-flex fs-16  align-center"></i>
+								<input type="text" class="flex pt-5 pb-5" placeholder="youtube username">
+							</label>
+						</div>
+					</div>
+					
+					<div class="widget red-10 bg-white ">
+						<div class="textwidget p-15">
+							<h2 class="text-cap pb-10">widget control</h2>
+							<p class="text-cap c-gray fw-bold fs-14">show/Hide widget</p>
+						</div>
+						<div class="contentwidget pl-20 pr-15 d-flex columns gap-20 pb-20">
+							<label class="checkboxconfig text-cap">
+								<input  type="checkbox" class="maincheck">
+								<div class="confcheck"></div>
+								<span>quick draft</span>
+							</label>
+							<label class="checkboxconfig">
+								<input  type="checkbox" class="maincheck">
+								<div class="confcheck"></div>
+								<span>Yearly Targets</span>
+							</label>
+							<label class="checkboxconfig ">
+								<input  type="checkbox" class="maincheck">
+								<div class="confcheck"></div>
+								<span>Tickets Statistics</span>
+							</label>
+							<label class="checkboxconfig ">
+								<input  type="checkbox" class="maincheck">
+								<div class="confcheck"></div>
+								<span>Latest News</span>
+							</label>
+							<label class="checkboxconfig ">
+								<input  type="checkbox" class="maincheck">
+								<div class="confcheck"></div>
+								<span>Latest Tasks</span>
+							</label>
+							<label class="checkboxconfig">
+								<input  type="checkbox" class="maincheck">
+								<div class="confcheck"></div>
+								<span>Top Search Items</span>
+							</label>
+						</div>
+					</div>
 
+
+					<div class="backup red-10 bg-white ">
+						<div class="textbackup p-15">
+							<h2 class="text-cap pb-10">backup manager</h2>
+							<p class="text-cap c-gray fw-bold fs-14">Control Backup Time And Location</p>
+						</div>
+						<div class="radio pl-20 pr-15 pb-15 d-flex columns just-center gap-15">
+							<label class="">
+								<input type="radio" name="type">
+								<span class="check"></span>
+								Daily
+							</label>
+							<label class="">
+								<input type="radio" name="type">
+								<span class="check"></span>
+								weekly
+							</label>
+							<label class="">
+								<input type="radio" name="type">
+								<span class="check"></span>
+								monthly
+							</label>
+						</div>
+						<div class="backupbottom d-flex just-center align-center gap-10">
+							<div class="sigma">
+								<i class="fa-solid fa-server fa-fw"></i>
+								<span class="text-cap ">sigma</span>
+							</div>
+							<div class="sigma activebackup">
+								<i class="fa-solid fa-server fa-fw"></i>
+								<span class="text-cap ">Zero</span>
+							</div>
+							<div class="sigma">
+								<i class="fa-solid fa-server fa-fw"></i>
+								<span class="text-cap ">megaman</span>
+							</div>
+						</div>
+					</div>
 				</div>
       </div>
     </div>

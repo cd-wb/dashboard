@@ -637,6 +637,7 @@ header .icons a i {
 
 .generailnfo .labels .emaildiv{
 	align-items: flex-end;
+	padding-bottom:10px;
 }
 .generailnfo .labels .emaildiv > label {
 	flex:1;
@@ -644,6 +645,7 @@ header .icons a i {
 .generailnfo .labels .emaildiv > label input{
 	background-color:#eee;
 	border:1px solid #ccc;
+	cursor:not-allowed
 }
 .generailnfo .labels .emaildiv button{
 	background-color: white;
@@ -652,6 +654,58 @@ header .icons a i {
 	text-transform: capitalize;
 	font-weight: bold;
 	cursor: pointer;
+}
+
+.social{
+}
+.social .socialInput > label{
+	background-color: #f6f6f6;
+	overflow: hidden;
+}
+.social .socialInput > label i {
+	width: 40px;
+	height: 40px;
+	color:#ccc;
+	transition: .3s;
+	font-size: 20px;
+}
+.social .socialInput > label input {
+	border:0;
+	border-left: 1px solid #ccc;
+	background-color: #f6f6f6;
+	height: 40px;
+	padding-left: 10px;
+}
+.social .socialInput > label:is(:hover,:focus-within) i {
+	color:#444;
+}
+
+.backup .backupbottom {
+	border-top:1px solid #eee;
+	margin:10px;
+	padding-top:20px;
+	padding-bottom: 10px;
+}
+.backup .backupbottom .sigma{
+	padding-top: 30px;
+	padding-bottom: 30px;
+	border:2px solid #eee;
+	flex:1;
+	text-align: center;
+	border-radius: 10px;
+	cursor: pointer;
+}
+.backup .backupbottom .sigma:is(:hover,.activebackup){
+	border-color:#fcc031;
+	color:#fcc031;
+
+}
+.backup .backupbottom .sigma > i{
+	font-size: 20px;
+}
+.backup .backupbottom .sigma > span {
+	margin-top: 5px;
+	display: block;
 }
 /*// setting-page */
 /*//==== content==== */

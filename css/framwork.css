@@ -6,6 +6,7 @@
   align-items: center;
   justify-content: space-between;
 }
+
 .wrap-botton{
 	border-radius:6px;
 	padding:10px;
@@ -23,6 +24,7 @@
 .wrap-botton:hover{
 	background-color: #feb200;
 }
+
 .leftChape{
 	border-radius: 6px;
 	font-size: 12px;
@@ -30,22 +32,21 @@
 	color:black;
 	background-color: #eee;
 }
-.toggle{
-	display: flex;
-}
-.toggle .toggle-check{
+
+.toggle-check{
 	appearance: none;
+	display: none;
 }
-.toggle .toggle-switch{
-	width: 78px;
-	height: 32px;
+.toggle-switch{
+	width: 67px;
+	height: 28px;
 	background-color: #ccc;
 	border-radius: 16px;
 	position: relative;
 	transition: .2s;
 	cursor: pointer;
 }
-.toggle .toggle-switch::before{
+.toggle-switch::before{
 	font:var(--fa-font-solid);
 	content: "\f00d";
 	font-size: 18px;
@@ -53,8 +54,8 @@
 	justify-content: center;
 	align-items: center;
 	position: absolute;
-	height: 28px;
-	width: 28px;
+	height: 24px;
+	width: 24px;
 	border-radius: 50%;
 	background-color: #fff;
 	color: #ccc;
@@ -62,13 +63,98 @@
 	top:2px;
 	left:2px;
 }
-.toggle .toggle-check:checked + .toggle-switch{
+.toggle-check:checked + .toggle-switch{
 	background-color: #fcc031;
 }
-.toggle .toggle-check:checked + .toggle-switch::before{
+.toggle-check:checked + .toggle-switch::before{
 	content:"\f00c";
 	color: #feb200;
-	left:48px;
+	left:41px;
+}
+
+.checkboxconfig  {
+	display: flex;
+	align-items: center;
+	gap:5px;
+	font-size:17px;
+	text-transform: capitalize;
+}
+.checkboxconfig .maincheck {
+	appearance: none;
+	display: none;
+}
+.checkboxconfig .confcheck {
+	width: 18px;
+	height: 18px;
+	border: 2px solid #ccc;
+	display: inline-block;
+	border-radius: 2px;
+	position: relative;
+	overflow: hidden;
+}
+.checkboxconfig:hover .confcheck, 
+.checkboxconfig input:checked + .confcheck {
+	border-color: #fcc031;
+
+}
+.checkboxconfig .confcheck::before{
+	font: var(--fa-font-solid);
+	content: "\f00c";
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	position: absolute;
+	font-size:12px;
+	background-color: #fcc031;
+	transform: scale(0) rotate(360deg);
+	transition: .3s;
+	width: 100%;
+	height: 100%;
+}
+.checkboxconfig input:checked + .confcheck::before{
+	transform: scale(1) ;
+}
+
+.radio > label{
+	position: relative;
+	display: flex;
+	align-items: center;
+	margin-left: 20px;
+	text-transform: capitalize;
+}
+.radio .check::before,
+.radio .check::after{
+	content: "";
+	border-radius: 50%;
+	position: absolute;
+	top:50%;
+	transition: .3s;
+
+}
+.radio .check::before{
+	width: 14px;
+	height: 14px;
+	border:2px solid #ccc;
+	left: -23px;
+	transform: translateY(-50%);
+}
+.radio .check::after{
+	width: 12px;
+	height: 12px;
+	background-color: #fcc031;
+	left: -20px;
+	transform: translateY(-50%) scale(0);
+}
+.radio > label input[type="radio"]{
+	appearance: none;
+	display: block;
+}
+.radio label input[type="radio"]:checked + .check::after{
+	transform: translateY(-50%) scale(1);
+}
+.radio label input[type="radio"]:checked + .check::before{
+	border-color: #fcc031;
 }
 /*// component */
 
@@ -79,6 +165,9 @@
 .space-bettwen {
   justify-content: space-between;
 }
+.just-center {
+  justify-content: center;
+}
 .space-around {
   justify-content: space-around;
 }
@@ -88,6 +177,9 @@
 .flex-w {
   flex-wrap: wrap;
 }
+.flex {
+  flex:1;
+}
 .align-end{
 	align-items: flex-end;
 }
@@ -96,6 +188,9 @@
 }
 .gap-20 {
   gap: 20px;
+}
+.gap-15 {
+  gap: 15px;
 }
 .gap-10 {
   gap: 10px;
@@ -143,6 +238,9 @@
 }
 .pt-5 {
   padding-top: 5px;
+}
+.pl-5 {
+  padding-left: 5px;
 }
 .pb-5 {
   padding-bottom: 5px;
@@ -335,6 +433,9 @@
 }
 .bord-eee{
 	border-color: #eee;
+}
+.bord-ccc{
+	border-color: #ccc;
 }
 /*// border */
 
