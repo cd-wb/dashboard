@@ -745,9 +745,10 @@ header .icons a i {
   grid-template-columns: repeat(auto-fill,minmax(450px,1fr));
 	gap:20px;
 }
-
-.overview{
-	/* height: 350px; */
+@media (max-width:650px){
+	.overview{
+		flex-direction: column;
+	}
 }
 .overview .overviewuser{
 	display: flex;
@@ -767,7 +768,20 @@ header .icons a i {
 	right: 0;
 	top: 50%;
 	transform: translateY(-50%);
-	background-color: #ccc;
+	background-color: #eee;
+}
+@media (max-width:650px){
+	.overview .overviewuser::before{
+	transform: translateY(-100%);
+	right: auto;
+		top: 100%;
+		width: 80%;
+		height: 1px;
+	}
+	/* .overview .overviewuser{ */
+	/* 	border-bottom: 1px solid #eee; */
+	/* } */
+
 }
 .overview .overviewuser > i{
 	font-size: 100px;
@@ -797,6 +811,66 @@ header .icons a i {
 .overview .overviewuser .stars{
 	font-size: 14px;
 	color: gold;
+}
+
+.generalInfo{
+	flex:1
+}
+.generalInfo .personInfo{
+	padding: 20px;
+}
+.generalInfo .personInfo:not(:last-child){
+	padding-bottom: 20px;
+	border-bottom: 1px solid #eee;
+}
+.generalInfo .personInfo:not(:first-child){
+	padding-top: 20px;
+}
+.generalInfo .personInfo > p{
+	font-weight: bold;
+}
+.generalInfo .personInfo .personInfo-content{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	width: 100%;
+	gap: 10px;
+}
+@media(max-width:991px) {
+ .generalInfo .personInfo .personInfo-content{
+	 flex-direction: column;
+	 align-items: flex-start;
+ }
+}
+@media (max-width:650px){
+ .generalInfo .personInfo .personInfo-content{
+	 flex-direction: column;
+	 align-items: center;
+ }
+ .generalInfo .personInfo{
+	 text-align: center;
+ }
+}
+.generalInfo .personInfo .personInfo-content > p{
+	color: gray;
+	font-size: 14px;
+}
+.generalInfo .personInfo .personInfo-content > p > span{
+	color: black;
+}
+.generalInfo .personInfo .personInfo-content > label .toggle-switch{
+	width: 80px;
+	height: 20px;
+}
+.generalInfo .personInfo .personInfo-content > label .toggle-switch::before{
+	height: 16px;
+	width: 16px;
+	font-size: 12px;
+}
+.generalInfo .personInfo .personInfo-content > label input:checked + .toggle-switch::before{
+	left: 62px;
+	font-size: 12px;
 }
 /*// profile-page */
 /*//==== content==== */
