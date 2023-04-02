@@ -732,4 +732,71 @@ header .icons a i {
 	font-size: 17px;
 }
 /*// setting-page */
+
+/* profile-page */
+.profile-page{
+  grid-template-columns:  1fr;
+  margin-left: 20px;
+  margin-right: 20px;
+	margin-bottom: 20px;
+	gap:20px;
+}
+.samme {
+  grid-template-columns: repeat(auto-fill,minmax(450px,1fr));
+	gap:20px;
+}
+
+.overview{
+	/* height: 350px; */
+}
+.overview .overviewuser{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	padding:20px;
+	position: relative;
+}
+.overview .overviewuser::before{
+	content:"";
+	position: absolute;
+	width: 1px;
+	height: 80%;
+	display: block;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	background-color: #ccc;
+}
+.overview .overviewuser > i{
+	font-size: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.overview .overviewuser > p{
+	font-size: 14px;
+	color:gray
+}
+.overview .overviewuser > h2{
+	font-size: 18px;
+}
+.overview .overviewuser .progressbar{
+	width: 130px;
+	height: 5px;
+	background-color: #eee;
+	border-radius: 3px;
+}
+.overview .overviewuser .progressbar > span{
+	display: block;
+	height: 100%;
+	background-color: #fcc031;
+	border-radius: 3px;
+}
+.overview .overviewuser .stars{
+	font-size: 14px;
+	color: gold;
+}
+/*// profile-page */
 /*//==== content==== */
