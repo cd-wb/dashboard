@@ -234,7 +234,7 @@
 						</div>
 						<div class="contentwidget pl-20 pr-15 d-flex columns gap-20 pb-20">
 							<label class="checkboxconfig text-cap">
-								<input  type="checkbox" class="maincheck">
+								<input  type="checkbox" class="maincheck" checked>
 								<div class="confcheck"></div>
 								<span>quick draft</span>
 							</label>
@@ -249,17 +249,17 @@
 								<span>Tickets Statistics</span>
 							</label>
 							<label class="checkboxconfig ">
-								<input  type="checkbox" class="maincheck">
+								<input  type="checkbox" class="maincheck" checked>
 								<div class="confcheck"></div>
 								<span>Latest News</span>
 							</label>
 							<label class="checkboxconfig ">
-								<input  type="checkbox" class="maincheck">
+								<input  type="checkbox" class="maincheck" checked>
 								<div class="confcheck"></div>
 								<span>Latest Tasks</span>
 							</label>
 							<label class="checkboxconfig">
-								<input  type="checkbox" class="maincheck">
+								<input  type="checkbox" class="maincheck" checked>
 								<div class="confcheck"></div>
 								<span>Top Search Items</span>
 							</label>
@@ -284,23 +284,33 @@
 								weekly
 							</label>
 							<label class="">
-								<input type="radio" name="type">
+								<input type="radio" name="type" checked>
 								<span class="check"></span>
 								monthly
 							</label>
 						</div>
 						<div class="backupbottom d-flex just-center align-center gap-10">
 							<div class="sigma">
-								<i class="fa-solid fa-server fa-fw"></i>
-								<span class="text-cap ">sigma</span>
+								<input id="sigma" type="radio" name="server" checked/>
+								<label for="sigma" class="text-cap ">
+									<i class="fa-solid fa-server fa-fw"></i>
+									<span>sigma</span>
+								</label>
+								
 							</div>
 							<div class="sigma activebackup">
-								<i class="fa-solid fa-server fa-fw"></i>
-								<span class="text-cap ">Zero</span>
+								<input id="zero" type="radio" name="server"/>
+								<label for="zero" class="text-cap ">
+									<i class="fa-solid fa-server fa-fw"></i>
+									<span>zero</span>
+								</label>
 							</div>
 							<div class="sigma">
-								<i class="fa-solid fa-server fa-fw"></i>
-								<span class="text-cap ">megaman</span>
+								<input id="mega" type="radio" name="server"/>
+								<label for="mega" class="text-cap ">
+									<i class="fa-solid fa-server fa-fw"></i>
+									<span>megamen</span>
+								</label>
 							</div>
 						</div>
 					</div>

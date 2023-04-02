@@ -685,27 +685,51 @@ header .icons a i {
 	margin:10px;
 	padding-top:20px;
 	padding-bottom: 10px;
+	height: 117px;
 }
-.backup .backupbottom .sigma{
-	padding-top: 30px;
-	padding-bottom: 30px;
-	border:2px solid #eee;
+.backup .backupbottom .sigma {
 	flex:1;
 	text-align: center;
-	border-radius: 10px;
-	cursor: pointer;
 }
-.backup .backupbottom .sigma:is(:hover,.activebackup){
+@media (max-width:767px){
+	.backup .backupbottom {
+		flex-direction: column;
+		height: auto;
+	}
+	.backup .backupbottom .sigma {
+		width: 100%;
+	}
+}
+.backup .backupbottom input[type="radio"]{
+	appearance: none;
+	display: none;
+}
+.backup .backupbottom .sigma label{
+	width: 100%;
+	border: 2px solid #eee;
+	border-radius: 10px;
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 5px;
+	cursor: pointer;
+	transition: .3s;
+}
+.sigma input[type="radio"]:checked + label  {
 	border-color:#fcc031;
 	color:#fcc031;
-
 }
-.backup .backupbottom .sigma > i{
-	font-size: 20px;
+.backup .backupbottom label:hover{
+	border-color:#fcc031;
+	color:#fcc031;
 }
-.backup .backupbottom .sigma > span {
-	margin-top: 5px;
-	display: block;
+.backup .backupbottom .sigma > label i{
+	font-size: 15px;
+}
+.backup .backupbottom .sigma > label span {
+	font-size: 17px;
 }
 /*// setting-page */
 /*//==== content==== */

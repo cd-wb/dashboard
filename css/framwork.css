@@ -153,6 +153,10 @@
 .radio label input[type="radio"]:checked + .check::after{
 	transform: translateY(-50%) scale(1);
 }
+.radio label:hover .check::before{
+	border-color: #fcc031;
+
+}
 .radio label input[type="radio"]:checked + .check::before{
 	border-color: #fcc031;
 }
