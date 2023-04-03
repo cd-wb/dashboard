@@ -741,9 +741,22 @@ header .icons a i {
 	margin-bottom: 20px;
 	gap:20px;
 }
-.samme {
-  grid-template-columns: repeat(auto-fill,minmax(450px,1fr));
+.skilsAct {
+  grid-template-columns: .5fr 1fr;
 	gap:20px;
+}
+@media (max-width: 767px) {
+  .skilsAct {
+		grid-template-columns:1fr;
+		margin-bottom: 10px;
+    gap: 10px;
+  }
+	.profile-page{
+		margin-left: 10px;
+		margin-right: 10px;
+		margin-bottom: 10px;
+		gap:10px;
+	}
 }
 @media (max-width:650px){
 	.overview{
@@ -818,6 +831,10 @@ header .icons a i {
 }
 .generalInfo .personInfo{
 	padding: 20px;
+	transition: .3s;
+}
+.generalInfo .personInfo:hover{
+	background-color: #f9f9f9;
 }
 .generalInfo .personInfo:not(:last-child){
 	padding-bottom: 20px;
@@ -871,6 +888,13 @@ header .icons a i {
 .generalInfo .personInfo .personInfo-content > label input:checked + .toggle-switch::before{
 	left: 62px;
 	font-size: 12px;
+}
+
+.skils{
+}
+.skils .cartskils > div:not(:last-child){
+	border-bottom: 1px solid #eee;
+
 }
 /*// profile-page */
 /*//==== content==== */
