@@ -172,6 +172,9 @@
 .just-center {
   justify-content: center;
 }
+.just-end {
+  justify-content: flex-end;
+}
 .space-around {
   justify-content: space-around;
 }
