@@ -391,6 +391,9 @@
 .text-l {
   text-align: left;
 }
+.text-r {
+  text-align: right;
+}
 .text-cap {
   text-transform: capitalize;
 }
@@ -425,6 +428,9 @@
 }
 .red-10 {
   border-radius: 10px;
+}
+.red-full {
+  border-radius: 50%;
 }
 .bord-1 {
   border: 1px solid;

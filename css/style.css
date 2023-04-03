@@ -741,16 +741,8 @@ header .icons a i {
 	margin-bottom: 20px;
 	gap:20px;
 }
-.skilsAct {
-  grid-template-columns: .5fr 1fr;
-	gap:20px;
-}
+
 @media (max-width: 767px) {
-  .skilsAct {
-		grid-template-columns:1fr;
-		margin-bottom: 10px;
-    gap: 10px;
-  }
 	.profile-page{
 		margin-left: 10px;
 		margin-right: 10px;
@@ -890,10 +882,41 @@ header .icons a i {
 	font-size: 12px;
 }
 
-.skils{
+.skilsAct {
+  grid-template-columns: .5fr 1fr;
+	gap:20px;
+}
+
+@media (max-width: 767px) {
+  .skilsAct {
+		grid-template-columns:1fr;
+		margin-bottom: 10px;
+    gap: 10px;
+  }
 }
 .skils .cartskils > div:not(:last-child){
 	border-bottom: 1px solid #eee;
+}
+
+.latest{
+}
+.latest .contentlatest{
+}
+.latest .contentlatest .contentlatest-box:not(:last-child){
+	border-bottom:1px solid #eee;
+}
+.latest .contentlatest .contentlatest-box{
+	transition: .3s;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.latest .contentlatest .contentlatest-box:hover{
+	background-color: #f9F9F9;
+}
+.latest .contentlatest .contentlatest-box .ct-boxfirst{
+}
+.latest .contentlatest .contentlatest-box .ct-boxfirst .actvimg{
+	width: 60px;
 
 }
 /*// profile-page */
