@@ -315,6 +315,12 @@
 .m-20 {
   margin: 20px;
 }
+.mr-20 {
+  margin-right: 20px;
+}
+.ml-20 {
+  margin-left: 20px;
+}
 .mb-20 {
   margin-bottom: 20px;
 }
@@ -330,6 +336,9 @@
 .mt-5 {
   margin-top: 5px;
 }
+.mb-5 {
+  margin-bottom: 5px;
+}
 /*// paddding & margin */
 
 /* background & color  */
@@ -344,6 +353,12 @@
 }
 .bg-red {
   background-color: red;
+}
+.bg-lired{
+	background-color: #f44336;
+}
+.bg-blue{
+  background-color: blue;
 }
 .bg-gray {
   background-color: rgb(209, 209, 209);

@@ -1020,6 +1020,7 @@ header .icons a i {
 	left: 50%;
 	transform: translateX(-50%);
 	color: white;
+	font-size: 12px;
 }
 .courses-page .courses-cart .courses-cartTitle > h4 {
 	
@@ -1028,4 +1029,75 @@ header .icons a i {
 	line-height: 1.5;
 }
 /*// courses-page */
+
+/* friends-page */
+.friends-page{
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  margin-left: 20px;
+  margin-right: 20px;
+	margin-bottom: 20px;
+  gap: 20px;
+}
+@media (max-width:391px){
+	.friends-page {
+		grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+		margin-left: 10px;
+		margin-right: 10px;
+		margin-bottom: 10px;
+		gap: 10px;
+	}
+}
+
+.friends-page .friend-cart{
+}
+.friends-page .friend-cart .friend-contact{
+	margin:10px;
+	position: absolute;
+}
+.friends-page .friend-cart .friend-contact > i{
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 30px;
+	height: 30px;
+	background-color: #eee;
+	border-radius: 50%;
+	transition: .3s;
+	cursor: pointer;
+	color:#333;
+}
+.friends-page .friend-cart .friend-contact > i:hover{
+	background-color: #fcc031;
+}
+.friends-page .friend-cart .friendInfo{
+}
+.friends-page .friend-cart .friendInfo > img{
+	width: 120px;
+}
+.friends-page .friend-cart .friendStatus{
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+	position: relative;
+}
+.friends-page .friend-cart .friendStatus > p:not(:last-of-type){
+	padding-bottom: 10px;
+}
+.friends-page .friend-cart .friendStatus .vip{
+	position: absolute;
+	font-size: 50px;
+	text-transform: uppercase;
+	color: red;
+	opacity: .2;
+	top:50%;
+	right: 0;
+	transform: translateY(-50%);
+	font-weight: bold;
+}
+.friends-page .friend-cart .friendBottom > div{
+	display: flex;
+gap: 5px;
+flex-wrap: wrap;
+justify-content: flex-end;
+}
+/*// friends-page */
 /*//==== content==== */
