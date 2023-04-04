@@ -1205,4 +1205,79 @@ justify-content: flex-end;
 	border-top: 1px solid #eee;
 }
 /*// files-page */
+
+/* plans-page */
+{
+}
+.plans-page{
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  margin-left: 20px;
+  margin-right: 20px;
+	margin-bottom: 20px;
+  gap: 20px;
+}
+@media (max-width: 767px) {
+  .plans-page{
+    grid-template-columns: minmax(200px, 1fr);
+    margin-left: 10px;
+    margin-right: 10px;
+    gap: 10px;
+  }
+}
+.plans-page .plans-cart{
+}
+.plans-page .plans-cart .top{
+	text-align: center;
+	height: 120px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color:white;
+	margin-bottom: 30px;
+	font-size: 20px;
+	border: 2px solid white;
+	flex-direction: column;
+}
+.plans-page .plans-cart .top > p:last-child{
+	font-size: 30px;
+	position: relative;
+	font-weight: bold;
+}
+.plans-page .plans-cart .top > p:last-child span{
+	font-size: 20px;
+	position: absolute;
+	top	:0;
+	left: -15px;
+}
+.plans-page .plans-cart .special{
+	margin-bottom: 10px;
+}
+.plans-page .plans-cart .special > div{
+	border-bottom: 1px solid #eee;
+	padding-top: 10px;
+}
+.plans-page .plans-cart .special > div > div:first-child {
+	font-size: 14px;
+}
+.plans-page .plans-cart .special > div > div:first-child i{
+	padding-right: 7px;
+	font-size: 16px;
+}
+.plans-page .plans-cart .special > div > div:last-child i{
+	color:#666;
+	cursor: pointer;
+}
+.plans-page .plans-cart .special > div:not(:last-child){
+}
+.plans-page .plans-cart > a{
+	font-size: 17px;
+	height: 30px;
+	width: 65px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 6px;
+	color: white;
+}
+/*// plans-page */
 /*//==== content==== */

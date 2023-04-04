@@ -375,9 +375,30 @@
 .bg-green {
   background-color: green;
 }
+.bg-free {
+  background-color: #22c55e;
+}
+.outline-free {
+	outline:2px solid  #22c55e;
+}
+.bg-basic {
+	background-color: #0075ff;
+}
+.outline-basic {
+	outline:2px solid #0075ff;
+}
+.bg-premiem {
+	background-color: #f59e0b;
+}
+.outline-premiem {
+	outline:2px solid #f59e0b;
+}
 
 .c-main {
   color: #fcc031;
+}
+.c-free {
+  color: #22c55e;
 }
 .c-white {
   color: white;
